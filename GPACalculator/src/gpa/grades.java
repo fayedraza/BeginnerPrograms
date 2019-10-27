@@ -20,7 +20,7 @@ public class grades {
 		//asks if you are in high school
 		System.out.println("Are you in high school?");
 		   String yn = hs.nextLine();
-		   if(yn.equals("yes") || yn.equals("YES") ) {
+		   if(yn.equalsIgnoreCase("yes")) {
 			   System.out.println("How many classes?");
 			  int classes = classs.nextInt();
 			
@@ -39,29 +39,29 @@ public class grades {
 				  }else {
 			 
 					  //finds gpa
-			 if (gpa==100 || gpa>=90) {
+			 if (gpa==100 || gpa>=93) {
 				 System.out.println("GPA: 4.0 ");
-			 } else if (gpa==89 || gpa>=85){
-				 System.out.println("GPA: 4.0");
-			 } else if (gpa==84 || gpa>=80){
+			 } else if (gpa==92 || gpa>=90){
 				 System.out.println("GPA: 3.7 ");
-			 }else if (gpa==79 || gpa>=77){
+			 }else if (gpa==89 || gpa>=87){
 				 System.out.println("GPA: 3.3 ");
-			 }else if (gpa==76 || gpa>=73){
+			 }else if (gpa==86 || gpa>=83){
 				 System.out.println("GPA: 3.0 ");
-			 }else if (gpa==72 || gpa>=70){
+			 }else if (gpa==82 || gpa>=80){
 				 System.out.println("GPA: 2.7 ");
-			 }else if (gpa==69 || gpa>=67){
+			 }else if (gpa==79 || gpa>=77){
 				 System.out.println("GPA: 2.3 ");
-			 }else if (gpa==66 || gpa>=63){
+			 }else if (gpa==76 || gpa>=73){
 				 System.out.println("GPA: 2.0 ");
-			 }else if (gpa==62 || gpa>=60){
+			 }else if (gpa==72 || gpa>=70){
 				 System.out.println("GPA: 1.7 ");
-			 }else if (gpa==59 || gpa>=55){
+			 }else if (gpa==69 || gpa>=67){
 				 System.out.println("GPA: 1.3 "); 
-			 }else if (gpa==54 || gpa>=50){
+			 }else if (gpa==66 || gpa>=63){
 				 System.out.println("GPA: 1.0");
-			 }else {
+			 }else if (gpa==62 || gpa>=60){
+				 System.out.println("GPA: 0.7");
+			 }else{
 				 System.out.println("GPA: 0.0 ");
 			 }
 				   }  }
